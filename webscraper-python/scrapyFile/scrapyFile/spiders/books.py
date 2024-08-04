@@ -2,7 +2,7 @@ import scrapy
 from pymongo import MongoClient
 import datetime
 
-client = MongoClient("mongodb+srv://root:helloworld@books.oehyryf.mongodb.net/")
+client = MongoClient()
 books = client.books
 def insertToDB(page, image, title, price, rating):
     genre = books[page]
